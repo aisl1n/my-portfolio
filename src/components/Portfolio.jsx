@@ -77,7 +77,7 @@ const Portfolio = () => {
           {portfolios.map(({ id, name, src, demo, style, github }) => (
             <div
               key={id}
-              className={`bg-white/20 shadow-lg shadow-white rounded-lg ${style}`}
+              className={`bg-white/20 shadow-lg rounded-lg ${style}`}
             >
               <img
                 src={src}
