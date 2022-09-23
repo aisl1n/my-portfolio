@@ -6,8 +6,8 @@ import movie from '../assets/portfolio/movie.png';
 import breve from '../assets/portfolio/breve.jpg';
 
 const Portfolio = () => {
-  const handleDemo = (demo) => portfolios.map(() =>  window.open(demo))
-  const handleCode = (github) => portfolios.map(() =>  window.open(github))
+  const handleDemo = (demo) => portfolios.map(() => window.open(demo));
+  const handleCode = (github) => portfolios.map(() => window.open(github));
 
   const portfolios = [
     {
@@ -16,6 +16,7 @@ const Portfolio = () => {
       src: pokedex,
       demo: 'https://aisl1n.github.io/pokedex-app/',
       github: 'https://github.com/aisl1n/pokedex-app',
+      style: 'shadow-green-400',
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ const Portfolio = () => {
       src: crypto,
       demo: 'https://aisl1n.github.io/crypto-app/',
       github: 'https://github.com/aisl1n/crypto-app',
+      style: 'shadow-orange-300',
     },
     {
       id: 3,
@@ -30,6 +32,7 @@ const Portfolio = () => {
       src: todos,
       demo: 'https://flamboyant-snyder-2fab1c.netlify.app/',
       github: 'https://github.com/aisl1n/todos-app',
+      style: 'shadow-gray-400',
     },
     {
       id: 4,
@@ -37,6 +40,7 @@ const Portfolio = () => {
       src: movie,
       demo: 'https://lucioaisla.tech/',
       github: 'https://github.com/aisl1n/movie-app',
+      style: 'shadow-blue-800',
     },
     {
       id: 5,
@@ -44,6 +48,7 @@ const Portfolio = () => {
       src: breve,
       demo: '',
       github: '',
+      style: 'shadow-black',
     },
     {
       id: 6,
@@ -51,13 +56,14 @@ const Portfolio = () => {
       src: breve,
       demo: '',
       github: '',
+      style: 'shadow-black',
     },
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-green-900 to-green-500 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-green-900 to-green-500 w-full pb-10 pt-20 text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -68,16 +74,17 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, name, src, demo, github }) => (
-            <div key={id} className="bg-white/20 shadow-lg shadow-white rounded-lg">
+          {portfolios.map(({ id, name, src, demo, style, github }) => (
+            <div
+              key={id}
+              className={`bg-white/20 shadow-lg shadow-white rounded-lg ${style}`}
+            >
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className='flex justify-center mt-2'>
-                {name}
-              </div>
+              <div className="flex justify-center mt-2">{name}</div>
               <div className="flex items-center">
                 <button
                   onClick={() => handleDemo(demo)}

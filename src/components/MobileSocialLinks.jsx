@@ -45,7 +45,7 @@ const MobileSocialLinks = () => {
         {links.map(({ id, name, child, href, download }) => (
           <li
             key={id}
-            className="group shadow-xl text-white px-10 py-2 my-2 flex justify-center items-center rounded-md bg-gradient-to-tr from-green-400 to-green-800 cursor-pointer"
+            className="group shadow-xl text-white py-2 my-2 flex justify-center items-center rounded-md bg-gradient-to-tr from-green-400 to-green-800 cursor-pointer"
           >
             <a
               href={href}
