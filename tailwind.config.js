@@ -4,8 +4,14 @@ module.exports = {
     extend: {
       animation: {
         blob: 'blob 7s infinite',
+        blink: 'blink 1s step-start infinite'
       },
       keyframes: {
+        blink: {
+          '50%': {
+            opacity: '0'
+          },
+        },
         blob: {
           '0%': {
             transform: 'translate(0px, 0px) scale(1)',
@@ -28,3 +34,4 @@ module.exports = {
   },
   plugins: [],
 };
+

@@ -1,4 +1,5 @@
 import React from 'react';
+import TyperWriter from './TyperWriter';
 import HeroImage from '../assets/heroImage.png';
 import {
   MdOutlineKeyboardArrowRight,
@@ -21,11 +22,9 @@ const Home = () => {
             <h2 className="text-3xl sm:text-5xl text-black font-bold flex">
               Eu sou
             </h2>
-            <h1 className="text-6xl sm:text-7xl font-black  text-green-700">
-              Aislã Lucio.
-            </h1>
+            <TyperWriter />
             <BgMotion />
-            <p className="text-gray-900 font-bold text-2xl md:text-xl">
+            <p className="text-gray-900 font-bold text-2xl md:text-3xl">
               {'<'} Desenvolvedor Front-End /{'>'}
             </p>
             <div>

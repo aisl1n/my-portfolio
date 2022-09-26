@@ -17,3 +17,11 @@
     }
   }
 }
+
+@layer components {
+  .blinking-cursor:after {
+    content: '|';
+    @apply text-green-400;
+  }
+  
+}
