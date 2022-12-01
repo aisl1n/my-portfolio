@@ -41,6 +41,7 @@ const NavBar = () => {
             className="px-4 cursor-pointer capitalize text-2xl text-black font-bold font-signature hover:scale-110 duration-300"
           >
             <Link to={link} smooth duration={700}>{link}</Link>
+
           </li>
         ))}
       </ul>
@@ -53,7 +54,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen backdrop-blur-xl bg-black/80">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen backdrop-blur-xl bg-black/90">
           {links.map(({ id, link }) => (
             <li
               key={id}

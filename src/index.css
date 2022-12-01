@@ -19,9 +19,9 @@
 }
 
 @layer components {
-  .blinking-cursor:after {
+  .blinking-cursor::after {
     content: '|';
     @apply text-green-400;
   }
-  
+
 }

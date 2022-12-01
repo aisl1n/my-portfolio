@@ -6,7 +6,7 @@ import reactImage from '../assets/reactImage.png';
 import github from '../assets/github.png';
 import tailwind from '../assets/tailwind.png';
 
-const Experience = () => {
+const Skills = () => {
   const techs = [
     {
       id: 1,
@@ -48,7 +48,7 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
+      name="skills"
       className="pt-20 bg-gradient-to-b from-green-900 to bg-green-500 w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center text-white">
@@ -75,4 +75,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;

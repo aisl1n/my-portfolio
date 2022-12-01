@@ -17,7 +17,7 @@ const TyperWriter = () => {
     <>
       <h2 className="text-6xl sm:text-7xl font-black  text-green-700">
         {typer}
-        <span className="blinking-cursor animate-blink"></span>
+        <span className="blinking-cursor"></span>
       </h2>
     </>
   );

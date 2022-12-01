@@ -25,7 +25,7 @@ const Home = () => {
             <TyperWriter />
             <BgMotion />
             <p className="text-gray-900 font-bold text-2xl md:text-3xl">
-              {'<'} Desenvolvedor Front-End /{'>'}
+              {'<'} Software Developer /{'>'}
             </p>
             <div>
               <Link
